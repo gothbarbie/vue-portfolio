@@ -1,5 +1,20 @@
 <template>
   <main>
+
+    <section class="introduction">
+      <img src="/static/hanna.jpg" alt="Hanna" />
+      <h1>Hi, I'm Hanna</h1>
+      <p>As a kid I dreamed of being an inventor, creating really cool 
+        machines and find solutions to problems people couldn’t 
+        imagine...</p>
+
+      <p>I grew up, someone invented the Internet and I became a web 
+        developer.</p>
+
+      <p>Now I build awesome web applications and find really cool 
+        solutions to problems most people can’t imagine!</p>
+
+    </section>
     
     <section class="green">
       <div class="wrapper">
@@ -16,10 +31,25 @@
       <div class="wrapper">
         <div class="left">
           <img class="iteamLogo" src="/static/iteam-logo.png" alt="Iteam"/>
-          <span class="date">Aug. 2016 - Today</span>
+          <div class="date">Aug. 2016 - Today</div>
         </div>
         <div class="right">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolore expedita quasi pariatur consequatur omnis deserunt distinctio deleniti numquam totam quos eius commodi beatae dolorum veniam, cumque quam quo ducimus?</p>
+          <p>Culture, value and fun is the keywords for Iteam, where I work as 
+            a Web Developer. We work in an agile manner, in self-organising 
+            teams and in near relationship with our clients, to bring them 
+            value, not only with technology, but with culture as well. Our core 
+            values influence not only our daily work, but the clients we take 
+            on, the projects we choose to be a part of and therefore also the 
+            dedication and eagerness with which we produce really great 
+            results for a wide range of businesses.</p>
+          
+          <p>My roles has been primarely focused on front end development 
+          so far, using technologies such as:</p>
+
+          <p>I have grown a great deal during the last year through my daily 
+            and continous work with cutting edge technologies, working with 
+            really experienced and talented people in all areas of web 
+            development.</p>
         </div>
       </div>
     </article>
@@ -28,6 +58,18 @@
 </template>
 
 <style lang="postcss" scoped>
+  .introduction {
+    background-color: #333;
+    color: #fff;
+    padding: 2em;
+  }
+  .introduction p {
+    color: #fff;
+  }
+  h1 {
+    font-size: 3em;
+    text-align: center;
+  }
   .green {
     display: flex;
     justify-content: center;
@@ -38,11 +80,16 @@
     color: #fff;
   }
   .download { 
-    font-family: Roboto, sans-serif;
+    display: block;
+    width: 100%;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    letter-spacing: -1px;
     position: absolute; 
-    bottom: 1em;
+    bottom: .5em;
     left: 0;
     color: #fff;
+    font-size: 2em;
   }
   article {
     background: #fff;
@@ -52,17 +99,9 @@
     justify-content: center;
   }
   .wrapper {  
-    max-width: 1000px;
     width: 100%;
     display: flex;
-  }
-  .left {
-    flex: 1;
-    margin: 0 1em 0 0;
-  }
-  .right {
-    flex: 1;
-    margin: 0 0 0 1em;
+    padding: 0 2em;
   }
   .green-right {
     position: relative;
@@ -71,4 +110,28 @@
     max-width: 100%;
     height: auto;
   }
+  .date {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    text-align: right;
+    letter-spacing: -1px;
+    line-height: 2em;
+  }
+
+    @media (max-width: 901px) {
+      .wrapper {
+        max-width: 1000px;
+      }
+      .left {
+        flex: 1;
+        margin: 0 2em 0 0;
+      }
+      .right {
+        flex: 1;
+        margin: 0 0 0 2em;
+      }
+      .date {
+        line-height: 4em;
+      }
+    }
 </style>

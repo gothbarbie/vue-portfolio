@@ -82,19 +82,30 @@ body {
 
 h2, h3, h4, h5, h6 {
   font-family: Montserrat, sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   color: 
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 6em;
   margin: 1em 0;
+}
+
+@media (max-width: 901px) {
+
+  h2 {
+    font-size: 2em;
+    margin: 1em 0;
+  }
+
 }
 
 p {
   font-family: Roboto, sans-serif;
-  font-weight: regular;
+  font-weight: 400;
   line-height: 1.7em;
   color: #555;
+  margin: 0 0 2em 0;
+  padding: 0;
 }
 </style>
