@@ -1,0 +1,30 @@
+/* ==================================================================
+   Sizes
+   ================================================================== */
+
+:root {
+  @custom-media --ie11 screen and (-ms-high-contrast: active), (-ms-high-contrast: none);
+
+  @custom-media --bp-desktop (min-width: 801px);
+  @custom-media --bp-desktop-large (min-width: 901px);
+  @custom-media --bp-desktop-xlarge (min-width: 1201px);
+
+  /* Portrait phones */
+  @custom-media --bp-iphone5 (max-width: 20em);
+  @custom-media --bp-iphone6 (max-width: 24em);
+  @custom-media --bp-iphone6plus (max-width: 29.75em);
+
+  /* Landscape phones */
+  @custom-media --bp-iphone5-landscape (max-width: 36em);
+  @custom-media --bp-iphone6-landscape (max-width: 42em);
+  @custom-media --bp-iphone6plus-landscape (max-width: 46em);
+  @custom-media --bp-small (max-width: 24em);      /* iPhone 5 */
+  @custom-media --bp-small-2 (max-width: 29.75em);
+  @custom-media --bp-small-3 (max-width: 39.8em);
+  @custom-media --bp-med (max-width: 46.8em);      /* iPhone 6+ */
+  @custom-media --bp-med-2 (max-width: 48em);
+  @custom-media --bp-large (max-width: 50em);      /* iPad Mini portrait */
+  @custom-media --bp-large-2 (max-width: 54.5em);
+  @custom-media --bp-xl (max-width: 60em);
+  @custom-media --bp-xl-2 (max-width: 67em);       /* iPad Mini landscape */
+}

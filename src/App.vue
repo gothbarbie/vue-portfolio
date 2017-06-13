@@ -2,17 +2,22 @@
   <div class="container">
     <app-header></app-header>
     <router-view></router-view>
+    <nav>
+      <app-nav active="experience"></app-nav>
+    </nav>
     <app-footer></app-footer>
   </div>
 </template>
 
 <script>
 import Header from '@/components/App/Header'
+import Navigation from '@/components/App/Navigation'
 import Footer from '@/components/App/Footer'
 
 export default {
   components: {
     appHeader: Header,
+    appNav: Navigation,
     appFooter: Footer
   }
 }
@@ -83,19 +88,51 @@ body {
 h2, h3, h4, h5, h6 {
   font-family: Montserrat, sans-serif;
   font-weight: 300;
-  color: 
 }
 
 h2 {
-  font-size: 6em;
-  margin: 1em 0;
+  font-size: 2em;
+  margin: 1.5em 0 1.5em;
 }
 
-@media (max-width: 901px) {
+h3 {
+  font-family: Roboto, sans-serif;
+  font-size: 1.5em;
+}
+
+nav {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  background-color: #f8f8f8;
+}
+
+a {
+  &:link{
+    color: var(--color-fuel-yellow);
+    text-decoration: underline;
+  }
+  &:visited{
+    color: var(--color-fuel-yellow);
+    text-decoration: underline;
+  }
+  &:hover{
+    color: var(--color-fuel-yellow);
+    text-decoration: none;
+  }
+  &:active{
+    color: var(--color-fuel-yellow);
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 901px) {
 
   h2 {
     font-size: 2em;
-    margin: 1em 0;
+    margin: 3em 0 2em;
   }
 
 }
@@ -105,7 +142,7 @@ p {
   font-weight: 400;
   line-height: 1.7em;
   color: #555;
-  margin: 0 0 2em 0;
+  margin: 0 0 1.25em 0;
   padding: 0;
 }
 </style>

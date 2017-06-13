@@ -7,7 +7,7 @@
         <span class="title">Web Developer</span>
       </h1>
       <nav>
-        <app-navigation></app-navigation>
+        <app-navigation active="experience"></app-navigation>
       </nav>
     </div>
   </header>
@@ -24,9 +24,9 @@
 
 <style lang="postcss" scoped>
   header {
-    background-color: #f8f8f8;
+    background-color: var(--color-alabaster);
     margin: 0;
-    padding: 0;
+    padding: 1em 2em;
     display: flex; 
     justify-content: center;
   }
@@ -37,33 +37,39 @@
   }
   h1 {
     font-family: Roboto, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.4em;
     display: flex;
     align-items: center;
   }
   nav {
+    display: none;
+  }
+  @media (max-width: 901px) {
+    nav {
+      display: block;
+    }
   }
   .firstName {
     font-weight: 900;
     text-transform: uppercase;
-    color: #555;
+    color: var(--color-emperor);
     letter-spacing: -1px;
   }
   .lastName {
     font-weight: 100;
     text-transform: uppercase;
-    color: #444;
+    color: var(--color-tundora);
     letter-spacing: -1px;
   }
   .separator {
-    color: #555;
+    color: var(--color-emperor);
     padding: 0 .2em;
     font-weight: 200;
   }
   .title {
     font-weight: 700;
     letter-spacing: -1px;
-    color: #68cb60;
+    color: var(--color-shiny-mantis);
     font-size: .8em;
   }
 </style>
