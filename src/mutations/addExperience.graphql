@@ -1,0 +1,5 @@
+mutation addExperience ($experience: Experience!, $token: String!) {
+  addExperience(experience: $experience, token: $token) {
+    id
+  }
+}
