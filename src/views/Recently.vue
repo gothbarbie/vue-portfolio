@@ -6,25 +6,23 @@
       </div>
     </section>
 
-    <article>
-      <div class="green">
-        <div class="wrapper">
-          <h3>React and Redux</h3>
-          <div class="date">
-            <div class="month">May</div>
-            <div class="day">1</div>
-            <div class="year">2017</div>
-          </div>
+    <article>  
+      <header class="dark">
+        <h3>React and Redux</h3>
+        <div class="date">
+          <div class="month">May</div>
+          <div class="day">1</div>
+          <div class="year">2017</div>
         </div>
-        
-      </div>
-      <div class="white">
+      </header>
+    
+      <main class="white">
         <img class="recentlyImage" src="/static/post-image.jpg" alt="An image" />
         <p>Today I finished my most recent course on React.</p> 
         <p>It was a really good, entertaining and educational course 
         by one of my favorite educators - Stephen Grider. I can really recommend it!</p>
         <p>Use this link to get it at a reduced cost: <a href="#">Udemy</a></p>
-      </div>
+      </main>
     </article>
     
   </main>
@@ -53,6 +51,9 @@
     align-items: center;
     padding: 0 2em;
     margin-bottom: .5em;
+  }
+  .dark {
+    background-color: var(--color-mine-shaft);
   }
   .date {
     text-align: center;

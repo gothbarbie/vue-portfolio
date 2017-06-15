@@ -73,6 +73,8 @@ table {
 	border-spacing: 0;
 }
 
+// General
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 body {
   font-family: Roboto, Helvetica, Arial, sans-serif;

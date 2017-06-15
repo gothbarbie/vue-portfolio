@@ -25,7 +25,7 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  apolloProvider,
+  // apolloProvider,
   router,
   store,
   template: '<App/>',

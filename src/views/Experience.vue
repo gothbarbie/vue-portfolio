@@ -66,6 +66,24 @@
   </main>
 </template>
 
+<script>
+export default {
+  name: 'Experience',
+  created() {
+    const token // GET TOKEN
+
+    if (token) {
+      let parsedToken
+      try {
+        parsedToken = JSON.parse(atob(token.split('.')[1]))
+      } catch (err) {
+        console.error(err)
+      }
+    }
+  }
+}
+</script>
+
 <style lang="postcss" scoped>
   main {
     display: block;
