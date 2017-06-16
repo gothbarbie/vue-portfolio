@@ -59,6 +59,12 @@
             and continous work with cutting edge technologies, working with 
             really experienced and talented people in all areas of web 
             development.</p>
+
+          <div class="customerLogos">
+            <img class="logoTaxiStockholm" src="/static/taxi-stockholm.png" alt="Taxi Stockholm">
+            <img class="logoMSF" src="/static/msf.png" alt="Medicins Sans Frontieres">
+            <img class="logoVimla" src="/static/vimla.png" alt="Vimla">
+          </div>
         </div>
       </div>
     </article>
@@ -70,16 +76,16 @@
 export default {
   name: 'Experience',
   created() {
-    const token // GET TOKEN
+    // const token // GET TOKEN
 
-    if (token) {
-      let parsedToken
-      try {
-        parsedToken = JSON.parse(atob(token.split('.')[1]))
-      } catch (err) {
-        console.error(err)
-      }
-    }
+    // if (token) {
+    //   let parsedToken
+    //   try {
+    //     parsedToken = JSON.parse(atob(token.split('.')[1]))
+    //   } catch (err) {
+    //     console.error(err)
+    //   }
+    // }
   }
 }
 </script>
@@ -162,14 +168,17 @@ export default {
     letter-spacing: -1px;
     line-height: 4em;
   }
+
+   /* Tech Logos */
   .techLogos {
     width: 100%;
     text-align: center;
-  }
-  .techLogos img {
-    margin: .5em;
-  }
 
+    & img {
+      margin: .5em;  
+    }
+  }
+  
   .logoJs {
     width: 50px;
   }
@@ -193,6 +202,33 @@ export default {
   .logoWebpack {
     width: 190px;
   }
+
+
+ /* Customer Logos */
+
+  .customerLogos {
+    width: 100%;
+    text-align: center;
+
+    & img {
+      margin: .5em;
+    }
+  }
+
+  .logoTaxiStockholm {
+    width: 100px;
+  }
+  
+  .logoMSF {
+    width: 140px;
+  }
+
+  .logoVimla {
+    width: 130px;
+  }
+
+
+  /* General */
 
   .left, .right {
     width: 100%;

@@ -7,9 +7,9 @@
       <div class="socialMedia">
         <p>If you want to get in touch with me, please use one of the following alternatives!</p>
         <ul class="socialMediaLinks">
-          <li><a href="#"><i class="ion-social-twitter" /></a></li>
-          <li><a href="#"><i class="ion-social-github" /></a></li>
-          <li><a href="#"><i class="ion-social-linkedin" /></a></li>
+          <li><a href="https://twitter.com/devSoderstrom"><i class="ion-social-twitter" /></a></li>
+          <li><a href="https://github.com/gothbarbie"><i class="ion-social-github" /></a></li>
+          <li><a href="https://www.linkedin.com/in/hannasoderstromwebdev/"><i class="ion-social-linkedin" /></a></li>
         </ul>
       </div>
     </div>

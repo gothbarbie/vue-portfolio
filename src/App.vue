@@ -73,7 +73,7 @@ table {
 	border-spacing: 0;
 }
 
-// General
+/* General */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 body {
@@ -94,6 +94,7 @@ h2, h3, h4, h5, h6 {
 
 h2 {
   font-size: 2em;
+  font-weight: 400;
   margin: 1.5em 0 1.5em;
 }
 
