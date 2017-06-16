@@ -7,7 +7,7 @@
         <span class="title">Web Developer</span>
       </h1>
       <nav>
-        <app-navigation active="experience"></app-navigation>
+        <app-navigation></app-navigation>
       </nav>
     </div>
   </header>
@@ -45,9 +45,7 @@
     display: none;
   }
   @media (max-width: 901px) {
-    nav {
-      display: block;
-    }
+
   }
   .firstName {
     font-weight: 900;

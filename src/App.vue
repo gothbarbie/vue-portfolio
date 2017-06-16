@@ -3,7 +3,7 @@
     <app-header></app-header>
     <router-view></router-view>
     <nav>
-      <app-nav active="experience"></app-nav>
+      <app-nav></app-nav>
     </nav>
     <app-footer></app-footer>
   </div>
@@ -72,14 +72,23 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+* {
+  box-sizing: border-box;
+}
 /* General */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+
 body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .wrapper {
@@ -92,10 +101,16 @@ h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
-h2 {
+h1 {
   font-size: 2em;
+  text-align: center;
+  line-height: 3em;
+}
+
+h2 {
+  font-size: 1.5em;
   font-weight: 400;
-  margin: 1.5em 0 1.5em;
+  margin: .6em 0;
 }
 
 h3 {
@@ -104,12 +119,11 @@ h3 {
 }
 
 nav {
-  height: 50px;
+  display: block;
   width: 100%;
   position: fixed;
   bottom: 0;
   overflow: hidden;
-  background-color: #f8f8f8;
 }
 
 a {
@@ -129,6 +143,24 @@ a {
     color: var(--color-fuel-yellow);
     text-decoration: none;
   }
+}
+
+.green {
+  background-image: -moz-linear-gradient( 90deg, rgb(133,203,106) 0%, rgb(74,203,86) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(133,203,106) 0%, rgb(74,203,86) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(133,203,106) 0%, rgb(74,203,86) 100%);
+  background-color: var(--color-mantis);
+  color: #fff;
+}
+
+.white {
+  background: var(--color-white);
+  color: #555;
+}
+
+.dark {
+  background-color: var(--color-mine-shaft);
+  color: var(--color-white);
 }
 
 @media (min-width: 901px) {

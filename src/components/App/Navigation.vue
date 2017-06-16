@@ -1,8 +1,8 @@
 <template>
   <ul>
-    <li class="active"><a href="/"><i class="ion-code" /><div>Experience</div></a></li>
-    <li><a href="/recently"><i class="ion-fork-repo" /><div>Recently</div></a></li>
-    <li><a href="/contact"><i class="ion-person" /><div>Contact</div></a></li>
+    <router-link to="/home" activeClass="active" tag="li"><i class="ion-code" /><div>Experience</div></router-link>
+    <router-link to="/recently" activeClass="active" tag="li"><i class="ion-fork-repo" /><div>Recently</div></router-link>
+    <router-link to="/contact" activeClass="active" tag="li"><i class="ion-person" /><div>Contact</div></router-link>
   </ul>
 </template>
 
@@ -11,7 +11,8 @@
     font-size: 1.5em;
   }
   ul {
-    width: 100%;
+    padding: 0;
+    margin: 0;
     height: 50px;
     font-family: Roboto, sans-serif;
     font-weight: 400;
@@ -19,11 +20,12 @@
     list-style-type: none;
     justify-content: space-around;
     align-items: center;
+    background-color: #f8f8f8;
   }
   li {
     text-align: center;
     color: #888;
-    padding: .4em 1em;
+    padding: .3rem 1rem;
 
     & div {
       font-size: .8em;
@@ -47,7 +49,7 @@
 
   .active {
     color: var(--color-fuel-yellow);
-    border-bottom: 4px solid var(--color-fuel-yellow);
+    border-bottom: 2px solid var(--color-fuel-yellow);
   }
   
   

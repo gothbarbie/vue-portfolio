@@ -2,13 +2,13 @@
   <main>
     <section class="green">
       <div class="wrapper">
-        <h2>Recently</h2>
+        <h1>Recently</h1>
       </div>
     </section>
 
     <article>  
-      <header class="dark">
-        <h3>React and Redux</h3>
+      <header class="wrapper dark flex">
+        <h2>React and Redux</h2>
         <div class="date">
           <div class="month">May</div>
           <div class="day">1</div>
@@ -16,7 +16,7 @@
         </div>
       </header>
     
-      <main class="white">
+      <main class="wrapper white col">
         <img class="recentlyImage" src="/static/post-image.jpg" alt="An image" />
         <p>Today I finished my most recent course on React.</p> 
         <p>It was a really good, entertaining and educational course 
@@ -25,24 +25,29 @@
       </main>
     </article>
     
+    <article>  
+      <header class="wrapper dark flex">
+        <h2>React Native</h2>
+        <div class="date">
+          <div class="month">Jun</div>
+          <div class="day">14</div>
+          <div class="year">2017</div>
+        </div>
+      </header>
+    
+      <main class="wrapper white col">
+        <img class="recentlyImage" src="/static/post-image.jpg" alt="An image" />
+        <p>Today I finished my most recent course on React.</p> 
+        <p>It was a really good, entertaining and educational course 
+        by one of my favorite educators - Stephen Grider. I can really recommend it!</p>
+        <p>Use this link to get it at a reduced cost: <a href="#">Udemy</a></p>
+      </main>
+    </article>
+
   </main>
 </template>
 
 <style lang="postcss" scoped>
-  .green {
-    display: flex;
-    background-image: -moz-linear-gradient( 90deg, rgb(133,203,106) 0%, rgb(74,203,86) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(133,203,106) 0%, rgb(74,203,86) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(133,203,106) 0%, rgb(74,203,86) 100%);
-    background-color: #7acb66;
-    color: var(--color-white);
-  }
-  .white {
-    background: var(--color-white);
-    color: #555;
-    padding: 2em 2em 4em;
-    justify-content: center;
-  }
   .wrapper {  
     width: 100%;
     display: flex;
@@ -50,24 +55,30 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 2em;
-    margin-bottom: .5em;
   }
-  .dark {
-    background-color: var(--color-mine-shaft);
+  .col {
+    flex-direction: column;
+    padding: 2rem;
   }
   .date {
     text-align: center;
     font-family: Montserrat, sans-serif;
     font-weight: 600;
+    border-radius: 4px; 
+    background: #fff;
+    color: var(--color-mine-shaft);
+    padding: .5rem;
+    margin: -3px 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,.15);
   }
   .month {
-    font-size: 1em;
+    font-size: .8em;
   }
   .day {
     font-size: 1.2em;
   }
   .year {
-    font-size: .9em;
+    font-size: .8em;
   }
   .recentlyImage {
     max-width: 100%;

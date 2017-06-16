@@ -16,7 +16,7 @@
 
     </section>
     
-    <section class="green">
+    <section class="green flex">
       <div class="wrapper">
         <div class="left">
           <h2>Experience</h2>
@@ -107,20 +107,6 @@ export default {
     padding: 2em;
   }
   .introduction p {
-    color: #fff;
-  }
-  h1 {
-    font-size: 2em;
-    text-align: center;
-    line-height: 3em;
-  }
-  .green {
-    display: flex;
-    justify-content: center;
-    background-image: -moz-linear-gradient( 90deg, rgb(133,203,106) 0%, rgb(74,203,86) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(133,203,106) 0%, rgb(74,203,86) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(133,203,106) 0%, rgb(74,203,86) 100%);
-    background-color: var(--color-mantis);
     color: #fff;
   }
   .download { 
