@@ -31,6 +31,7 @@ footer {
 
 .wrapper {
   padding: 4em 2em;
+  max-width: 1000px;
 }
 .logo {
   margin: 0 3em 2em;

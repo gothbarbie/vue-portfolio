@@ -2,20 +2,22 @@
   <main>
 
     <section class="introduction">
-      <img class="hanna" src="/static/hanna.jpg" alt="Hanna" />
-      <div class="text">
-        <h1>Hi, I'm Hanna</h1>
-        <p>As a kid I dreamed of being an inventor, creating really cool 
-          machines and find solutions to problems people couldn’t 
-          imagine...</p>
+      <div class="wrapper">
+        <img class="hanna" src="/static/hanna.jpg" alt="Hanna" />
+        <div class="text">
+          <h1>Hi, I'm Hanna</h1>
+          <p>As a kid I dreamed of being an inventor, creating really cool 
+            machines and find solutions to problems people couldn’t 
+            imagine...</p>
 
-        <p>I grew up, someone invented the Internet and I became a web 
-          developer.</p>
+          <p>I grew up, someone invented the Internet and I became a web 
+            developer.</p>
 
-        <p>Now I build awesome web applications and find really cool 
-          solutions to problems most people can’t imagine!</p>
-      
-        <a href="/static/hanna-soderstrom-cv-2017.pdf" class="download"><i class="ion-ios-download" /> <span>Download CV</span></a>
+          <p>Now I build awesome web applications and find really cool 
+            solutions to problems most people can’t imagine!</p>
+        
+          <a href="/static/hanna-soderstrom-cv-2017.pdf" class="download"><i class="ion-ios-download" /> <span>Download CV</span></a>
+        </div>
       </div>
     </section>
     
@@ -218,7 +220,7 @@ export default {
   }
 
   @media (min-width: 768px) {
-    .introduction {
+    .introduction .wrapper {
       display: flex;
       align-items: center;
 
@@ -242,6 +244,12 @@ export default {
     }
     .right {
       width: 50%;
+    }
+  }
+  @media (min-width: 1000px) {
+    .wrapper {
+      max-width: 1000px;
+      margin: 0 auto;
     }
   }
 </style>

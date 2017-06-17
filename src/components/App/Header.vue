@@ -26,7 +26,6 @@
   header {
     background-color: var(--color-alabaster);
     margin: 0;
-    padding: 0 2em;
     display: flex; 
     justify-content: center;
   }
@@ -34,6 +33,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1000px;
+    padding: 0 2rem;
   }
   h1 {
     font-family: Roboto, sans-serif;

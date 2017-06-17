@@ -7,12 +7,14 @@
     </section>
 
     <article>  
-      <header class="wrapper dark flex">
-        <h2>React and Redux</h2>
-        <div class="date">
-          <div class="month">May</div>
-          <div class="day">1</div>
-          <div class="year">2017</div>
+      <header class="dark">
+        <div class="wrapper flex">
+          <h2>React and Redux</h2>
+          <div class="date">
+            <div class="month">May</div>
+            <div class="day">1</div>
+            <div class="year">2017</div>
+          </div>
         </div>
       </header>
     
@@ -30,12 +32,14 @@
     </article>
     
     <article>  
-      <header class="wrapper dark flex">
-        <h2>React and Redux</h2>
-        <div class="date">
-          <div class="month">May</div>
-          <div class="day">1</div>
-          <div class="year">2017</div>
+      <header class="dark">
+        <div class="wrapper flex">
+          <h2>React and Redux</h2>
+          <div class="date">
+            <div class="month">May</div>
+            <div class="day">1</div>
+            <div class="year">2017</div>
+          </div>
         </div>
       </header>
     
@@ -58,11 +62,13 @@
 <style lang="postcss" scoped>
   .wrapper {  
     width: 100%;
+    max-width: 1000px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 2em;
+    margin: 0 auto;
   }
   .col {
     flex-direction: column;
@@ -96,7 +102,6 @@
   @media (min-width: 768px) {
     .wrapper {
       flex-direction: row;
-      margin: 0;
     }
     .left, .right {
       width: 50%;

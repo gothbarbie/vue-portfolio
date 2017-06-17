@@ -7,7 +7,7 @@
     </section>
     
     <section class="white">
-      <form class="contactForm">
+      <form class="contactForm wrapper">
         <div class="left">
           
           <div class="formElement">
@@ -46,12 +46,13 @@
 <style lang="postcss" scoped>
   .wrapper {  
     width: 100%;
+    max-width: 1000px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 2em;
-    margin-bottom: .5em;
+    margin: 0 auto .5rem auto;
   }
   .contactForm {
     padding: 2rem;
