@@ -36,12 +36,13 @@
         <div class="right padding">
           <p>Culture, value and fun is the keywords for Iteam, where I work as 
             a Web Developer. We work in an agile manner, in self-organising 
-            teams and in near relationship with our clients, to bring them 
-            value, not only with technology, but with culture as well. Our core 
-            values influence not only our daily work, but the clients we take 
-            on, the projects we choose to be a part of and therefore also the 
-            dedication and eagerness with which we produce really great 
-            results for a wide range of businesses.</p>
+            teams and in close relationship with our clients, to bring them 
+            value. Not only with technology, but with culture as well. Our core 
+            values - to produce value, to have fun and to do good - influence 
+            not only our daily work, but the clients we take on, the projects 
+            we choose to be a part of and therefore also the dedication and 
+            eagerness with which we produce really great results for a wide 
+            range of businesses.</p>
           
           <p>My roles has been primarely focused on front end development 
           so far, using technologies such as:</p>
@@ -220,6 +221,12 @@ export default {
   }
 
   @media (min-width: 768px) {
+    .hanna {
+      max-width: 300px;  
+      border-radius: 150px;
+      margin: 1em auto;
+      display: block;
+    }
     .introduction .wrapper {
       display: flex;
       align-items: center;

@@ -35,6 +35,7 @@
       color: #888;
       padding: .3rem .5rem;
       margin: 0 .5rem;
+      cursor: pointer;
 
       & div {
         font-size: .8em;
@@ -43,6 +44,7 @@
     }
     a {
       text-decoration: none;
+
       &:link {
         color: var(--color-tundora);
       }

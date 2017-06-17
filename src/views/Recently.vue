@@ -73,6 +73,7 @@
   .col {
     flex-direction: column;
     padding: 2rem;
+    align-items: flex-start;
   }
   .date {
     text-align: center;

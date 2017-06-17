@@ -1,7 +1,0 @@
-query recentlies {
-  recentlies {
-    title
-    content
-    createdAt
-  }
-}

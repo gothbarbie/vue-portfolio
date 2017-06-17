@@ -1,5 +1,0 @@
-mutation addRecently ($recently: Recently!, $token: String!) {
-  addRecently(recently: $recently, token: $token) {
-    id
-  }
-}
