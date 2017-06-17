@@ -109,4 +109,9 @@
     display: flex;
     justify-content: flex-end;
   }
+  @media (min-width: 768px) {
+    .left, .right {
+      width: 50%;
+    }
+  }
 </style>

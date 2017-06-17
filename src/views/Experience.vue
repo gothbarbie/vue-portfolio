@@ -3,37 +3,35 @@
 
     <section class="introduction">
       <img class="hanna" src="/static/hanna.jpg" alt="Hanna" />
-      <h1>Hi, I'm Hanna</h1>
-      <p>As a kid I dreamed of being an inventor, creating really cool 
-        machines and find solutions to problems people couldn’t 
-        imagine...</p>
+      <div class="text">
+        <h1>Hi, I'm Hanna</h1>
+        <p>As a kid I dreamed of being an inventor, creating really cool 
+          machines and find solutions to problems people couldn’t 
+          imagine...</p>
 
-      <p>I grew up, someone invented the Internet and I became a web 
-        developer.</p>
+        <p>I grew up, someone invented the Internet and I became a web 
+          developer.</p>
 
-      <p>Now I build awesome web applications and find really cool 
-        solutions to problems most people can’t imagine!</p>
-
+        <p>Now I build awesome web applications and find really cool 
+          solutions to problems most people can’t imagine!</p>
+      
+        <a href="/static/hanna-soderstrom-cv-2017.pdf" class="download"><i class="ion-ios-download" /> <span>Download CV</span></a>
+      </div>
     </section>
     
-    <section class="green flex">
-      <div class="wrapper">
-        <div class="left">
-          <h2>Experience</h2>
-        </div>
-        <div class="right green-right">
-          <a href="#" class="download"><i class="ion-document" /> <span>Download CV</span></a>
-        </div>
+    <section class="green">
+      <div class="wrapper flex title">
+        <h1>Experience</h1>
       </div>
     </section>
 
     <article>
       <div class="wrapper">
-        <div class="left">
+        <div class="left padding">
           <img class="iteamLogo" src="/static/iteam-logo.png" alt="Iteam"/>
           <div class="date">Aug. 2016 - Today</div>
         </div>
-        <div class="right">
+        <div class="right padding">
           <p>Culture, value and fun is the keywords for Iteam, where I work as 
             a Web Developer. We work in an agile manner, in self-organising 
             teams and in near relationship with our clients, to bring them 
@@ -91,9 +89,16 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+  .title {
+    justify-content: space-between;
+    padding: 0 2em;
+  }
   main {
     display: block;
     width: 100%;
+  }
+  .padding {
+    padding: 0 2em;
   }
   .hanna {
     max-width: 200px;  
@@ -115,9 +120,6 @@ export default {
     font-family: Montserrat, sans-serif;
     font-weight: 600;
     letter-spacing: -1px;
-    position: absolute; 
-    bottom: .5em;
-    left: 0;
     color: #fff;
     font-size: 1em;
     text-decoration: none;
@@ -133,12 +135,6 @@ export default {
     padding: 4em 0;
     display: flex;
     justify-content: center;
-  }
-  .wrapper {  
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 2em;
   }
   .green-right {
     position: relative;
@@ -221,20 +217,31 @@ export default {
     margin: 0;
   }
 
-  @media (min-width: 901px) {
+  @media (min-width: 768px) {
+    .introduction {
+      display: flex;
+      align-items: center;
+
+      & h1 {
+        text-align: left; 
+      }
+
+      & img {
+        width: 50%;
+      }
+      & .text {
+        width: 50%;
+      }
+    }
     .wrapper {
-      max-width: 1000px;
+      display: flex;
+      flex-direction: row;
     }
     .left {
-      flex: 1;
-      margin: 0 2em 0 0;
+      width: 50%;
     }
     .right {
-      flex: 1;
-      margin: 0 0 0 2em;
-    }
-    .date {
-      line-height: 4em;
+      width: 50%;
     }
   }
 </style>

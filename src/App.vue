@@ -2,8 +2,8 @@
   <div class="container">
     <app-header></app-header>
     <router-view></router-view>
-    <nav>
-      <app-nav></app-nav>
+    <nav id="footer-nav">
+      <app-nav-footer></app-nav-footer>
     </nav>
     <app-footer></app-footer>
   </div>
@@ -11,15 +11,16 @@
 
 <script>
 import Header from '@/components/App/Header'
-import Navigation from '@/components/App/Navigation'
+import NavigationFooter from '@/components/App/NavigationFooter'
 import Footer from '@/components/App/Footer'
 
 export default {
   components: {
     appHeader: Header,
-    appNav: Navigation,
+    appNavFooter: NavigationFooter,
     appFooter: Footer
   }
+
 }
 </script>
 
@@ -118,8 +119,7 @@ h3 {
   font-size: 1.5em;
 }
 
-nav {
-  display: block;
+#footer-nav {
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -161,15 +161,6 @@ a {
 .dark {
   background-color: var(--color-mine-shaft);
   color: var(--color-white);
-}
-
-@media (min-width: 901px) {
-
-  h2 {
-    font-size: 2em;
-    margin: 3em 0 2em;
-  }
-
 }
 
 p {

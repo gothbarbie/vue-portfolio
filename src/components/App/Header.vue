@@ -26,7 +26,7 @@
   header {
     background-color: var(--color-alabaster);
     margin: 0;
-    padding: 1em 2em;
+    padding: 0 2em;
     display: flex; 
     justify-content: center;
   }
@@ -40,12 +40,6 @@
     font-size: 1.4em;
     display: flex;
     align-items: center;
-  }
-  nav {
-    display: none;
-  }
-  @media (max-width: 901px) {
-
   }
   .firstName {
     font-weight: 900;

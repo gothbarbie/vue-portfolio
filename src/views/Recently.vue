@@ -17,30 +17,38 @@
       </header>
     
       <main class="wrapper white col">
-        <img class="recentlyImage" src="/static/post-image.jpg" alt="An image" />
-        <p>Today I finished my most recent course on React.</p> 
-        <p>It was a really good, entertaining and educational course 
-        by one of my favorite educators - Stephen Grider. I can really recommend it!</p>
-        <p>Use this link to get it at a reduced cost: <a href="#">Udemy</a></p>
+        <div class="left">
+          <img class="recentlyImage" src="/static/post-image.jpg" alt="An image" />
+        </div>
+        <div class="right">
+          <p>Today I finished my most recent course on React.</p> 
+          <p>It was a really good, entertaining and educational course 
+          by one of my favorite educators - Stephen Grider. I can really recommend it!</p>
+          <p>Use this link to get it at a reduced cost: <a href="#">Udemy</a></p>
+        </div>
       </main>
     </article>
     
     <article>  
       <header class="wrapper dark flex">
-        <h2>React Native</h2>
+        <h2>React and Redux</h2>
         <div class="date">
-          <div class="month">Jun</div>
-          <div class="day">14</div>
+          <div class="month">May</div>
+          <div class="day">1</div>
           <div class="year">2017</div>
         </div>
       </header>
     
       <main class="wrapper white col">
-        <img class="recentlyImage" src="/static/post-image.jpg" alt="An image" />
-        <p>Today I finished my most recent course on React.</p> 
-        <p>It was a really good, entertaining and educational course 
-        by one of my favorite educators - Stephen Grider. I can really recommend it!</p>
-        <p>Use this link to get it at a reduced cost: <a href="#">Udemy</a></p>
+        <div class="left">
+          <img class="recentlyImage" src="/static/post-image.jpg" alt="An image" />
+        </div>
+        <div class="right">
+          <p>Today I finished my most recent course on React.</p> 
+          <p>It was a really good, entertaining and educational course 
+          by one of my favorite educators - Stephen Grider. I can really recommend it!</p>
+          <p>Use this link to get it at a reduced cost: <a href="#">Udemy</a></p>
+        </div>
       </main>
     </article>
 
@@ -84,5 +92,20 @@
     max-width: 100%;
     border: 1px solid var(--color-fruit-salad);
     margin-bottom: 2em;
+  }
+  @media (min-width: 768px) {
+    .wrapper {
+      flex-direction: row;
+      margin: 0;
+    }
+    .left, .right {
+      width: 50%;
+    }
+    .left {
+      padding-right: .5rem;
+    }
+    .right {
+      padding-left: .5rem;
+    }
   }
 </style>

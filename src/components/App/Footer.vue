@@ -80,4 +80,10 @@ p {
     color: var(--color-dove-gray);
   }
 } 
+@media (min-width: 768px) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
 </style>
