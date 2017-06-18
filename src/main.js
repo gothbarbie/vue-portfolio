@@ -7,7 +7,7 @@ import router from './router'
 
 Vue.use(VueResource)
 
-VUe.http.options.root = ''
+Vue.http.options.root = ''
 
 Vue.config.productionTip = false
 

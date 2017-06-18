@@ -1,3 +1,0 @@
-export const SET_EXPERIENCES = 'SET_EXPERIENCES'
-export const SET_RECENTLIES = 'SET_RECENTLIES'
-export const INIT_QUERY = 'INIT_QUERY'
