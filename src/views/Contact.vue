@@ -64,47 +64,6 @@
   .right {
     display: none;
   }
-  .formElement {
-    margin: 0 0 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  input, textarea {
-    width: 100%;
-    border-bottom: 1px solid #4f9b49;
-    outline: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    font-size: 1rem;
-    padding: .2rem;
-    margin: .25rem 0;
-  }
-  select {
-    border: 1px solid #4f9b49;
-    border-radius: 0;
-    font-size: 1rem;
-    padding: .2rem;
-    outline: none;
-
-    & option {
-      color: var(--color-emperor);
-    }
-  }
-  .button {
-    width: auto;
-    color: var(--color-emperor);
-    padding: .5rem 1rem;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(205, 205, 205);
-    border-radius: 1px;
-    background-image: -moz-linear-gradient( 90deg, rgb(224,224,224) 0%, rgb(250,250,250) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(224,224,224) 0%, rgb(250,250,250) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(224,224,224) 0%, rgb(250,250,250) 100%);
-  }
   .alignRight {
     width: 100%;
     display: flex;

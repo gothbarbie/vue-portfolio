@@ -5,6 +5,8 @@ import Experience from '@/views/Experience'
 import Recently from '@/views/Recently'
 import Contact from '@/views/Contact'
 
+import Dashboard from '@/views/admin/Dashboard'
+
 Vue.use(Router)
 
 export default new Router({
@@ -21,6 +23,10 @@ export default new Router({
     {
       path: '/contact',
       component: Contact
+    },
+    {
+      path: '/admin',
+      component: Dashboard
     },
     {
       path: '*',
