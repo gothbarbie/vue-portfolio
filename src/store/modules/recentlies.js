@@ -48,16 +48,6 @@ const actions = {
   },
   deleteRecently: ({ commit }, id) => {
     commit(types.RECENTLIES_DELETE, id)
-  },
-  loadRecentlies: ({ commit }) => {
-    Vue.http
-      .get('recentlies.json')
-      .then(response => response.json())
-      .then(data => {
-        if (data) {
-          commit(types.RECENTLIES_SET, data)
-        }
-      })
   }
 }
 

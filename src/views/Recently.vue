@@ -18,9 +18,6 @@
 
   export default {
     name: 'Recently',
-    created() {
-      this.loadRecentlies()
-    },
     computed: {
       recentlies() {
         return this.$store.getters.recentlies
