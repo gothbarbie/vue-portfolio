@@ -1,77 +1,95 @@
 <template>
   <main>
+    
     <section class="green">
-      <div class="wrapper">
+      <div class="wrapper flex title">
         <h1>Contact</h1>
       </div>
     </section>
     
-    <section class="white">
-      <form class="contactForm wrapper">
-        <div class="left">
-          
-          <div class="formElement">
-            <label for="name">Who are you?</label>
-            <input type="text" name="name" placeholder="Your Name"/>
-          </div>
-          <div class="formElement">
-            <label for="email">How can I reach you?</label>
-            <input type="email" name="email" placeholder="your.email@example.com" />
-          </div>
-          <div class="formElement">
-            <label for="subject">What is the subject?</label>
-            <select>
-              <option>Job oportunity</option>
-              <option>Feedback &amp; Praise</option>
-              <option>Personal / other...</option>
-            </select>
-          </div>
-          <div class="formElement">
-            <label for="message">Your message here:</label>
-            <textarea name="message" rows="4"></textarea>
-          </div>
-
-          <div class="alignRight">
-            <input class="button" type="submit" value="Send">
-          </div>
+    <section class="contact">
+      <div class="wrapper">
+        <div class="left padding">
+          <img class="hanna" src="../assets/img/hanna.jpg" alt="Hanna" />
         </div>
-
-        <div class="right">
+        <div class="right padding">
+          <p>You can reach my on my email <a href="mailto:info@hannasoderstrom.com">info@hannasoderstrom.com</a>.</p>
+          <p>I am also available through social media.</p>
+          <ul class="socialMediaLinks">
+            <li><a href="https://twitter.com/devSoderstrom"><i class="ion-social-twitter" /></a></li>
+            <li><a href="https://github.com/gothbarbie"><i class="ion-social-github" /></a></li>
+            <li><a href="https://www.linkedin.com/in/hannasoderstromwebdev/"><i class="ion-social-linkedin" /></a></li>
+          </ul>
         </div>
-      </form>
+      </div>
     </section>
+
   </main>
 </template>
 
 <style lang="postcss" scoped>
-  .wrapper {  
+  main {
+    display: block;
     width: 100%;
-    max-width: 1000px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2em;
-    margin: 0 auto .5rem auto;
   }
-  .contactForm {
-    padding: 2rem;
-  }
-  .left, .right {
-    width: 100%;
-    margin: 0;
-  }
-  .right {
-    display: none;
+  .contact {
+    margin: 2em 0;
   }
   .alignRight {
     width: 100%;
     display: flex;
     justify-content: flex-end;
   }
+  .socialMediaLinks {
+    margin: 0 auto;
+    width: 130px;
+    display: flex;
+    justify-content: space-around;
+    & i {
+      font-size: 2em;
+      color: var(--color-dove-gray);
+    }
+  } 
+  .wrapper {
+    padding: 0 2em;
+  }
+  .hanna {
+    max-width: 200px;  
+    border-radius: 100px;
+    margin: 1em auto;
+    display: block;
+  }
   @media (min-width: 768px) {
-    .left, .right {
+    .contact .wrapper {
+      display: flex;
+      align-items: center;
+
+      & h1 {
+        text-align: left; 
+      }
+
+      & img {
+        width: 50%;
+      }
+      & .text {
+        width: 50%;
+      }
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+    .left {
       width: 50%;
+    }
+    .right {
+      width: 50%;
+    }
+  }
+  @media (min-width: 1000px) {
+    .wrapper {
+      max-width: 1000px;
+      margin: 0 auto;
     }
   }
 </style>

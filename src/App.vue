@@ -118,6 +118,18 @@ h3 {
   font-size: 1.5em;
 }
 
+em {
+  font-style: italic;
+}
+
+small {
+  text-transform: uppercase;
+}
+
+strong {
+  font-weight: bold;
+}
+
 #footer-nav {
   width: 100%;
   position: fixed;
