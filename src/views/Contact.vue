@@ -16,9 +16,30 @@
           <p>You can reach my on my email <a href="mailto:info@hannasoderstrom.com">info@hannasoderstrom.com</a>.</p>
           <p>I am also available through social media.</p>
           <ul class="socialMediaLinks">
-            <li><a href="https://twitter.com/devSoderstrom"><i class="ion-social-twitter" /></a></li>
-            <li><a href="https://github.com/gothbarbie"><i class="ion-social-github" /></a></li>
-            <li><a href="https://www.linkedin.com/in/hannasoderstromwebdev/"><i class="ion-social-linkedin" /></a></li>
+            <li>
+              <div>
+                <i class="ion-social-twitter" />
+              </div>
+              <div>
+                <a href="https://twitter.com/devSoderstrom">@devSoderstrom</a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <i class="ion-social-github" />
+              </div>
+              <div>
+                <a href="https://github.com/gothbarbie">gothbarbie</a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <i class="ion-social-linkedin" />
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/in/hannasoderstromwebdev/">hannasoderstromwebdev</a>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -41,15 +62,25 @@
     justify-content: flex-end;
   }
   .socialMediaLinks {
-    margin: 0 auto;
-    width: 130px;
-    display: flex;
-    justify-content: space-around;
+    & div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     & i {
       font-size: 2em;
       color: var(--color-dove-gray);
+      margin-right: 1rem;
+      width: 2rem;
     }
   } 
+  .socialMediaLinks li {
+    line-height: 2em;
+    width: 220px;
+    display: flex;
+    align-items: center;
+  }
   .wrapper {
     padding: 0 2em;
   }
