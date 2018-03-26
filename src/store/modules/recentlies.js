@@ -5,6 +5,20 @@ import moment from 'moment'
 const state = {
   recentlies: [
     {
+      title: 'React, Redux, GraphQL, Jest and Cypress',
+      date: moment('2018-03-26', 'YYYY-MM-DD'),
+      image: '',
+      content: `
+        <p>I haven't updated here in a while, the reason isn't that there hasn't been stuff to write about. But simply that I haven't had the time to spare, because I've been so busy.</p>
+        
+        <p>Most recently I've focused mainly on increasing my skills in testing. For unit-tests that is mainly with <a href="https://facebook.github.io/jest/">Jest</a> (developed by Facebook). And for integration and end-to-end tests that has just recently been with <a href="http://cypress.io">Cypress</a>.</p>
+
+        <p>In my spare-time I've been updating my Vacation Planner application, a project where I have done everything. From design in <a href="https://figma.com">Figma</a>, to backend in Node with Express, Passport (auth) and GraphQL, to frontend with React, Apollo GraphQL and Redux (with Thunk).</p>
+
+        <p>That is a mouthfull of name-drops and yes, unless you are familiar with them they won't mean much to you. But what you can take away is that I can now for certain back up the claim that I know what I'm doing, through all the steps of building an web application. ;)</p>
+      `
+    },
+    {
       title: 'Smiley Diary on iOS',
       date: moment('2017-09-11', 'YYYY-MM-DD'),
       image: 'smiley-diary-icon-512.png',
